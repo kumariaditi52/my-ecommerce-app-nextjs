@@ -3,39 +3,46 @@ import ProductCard from '@/src/components/ProductCard';
 import Cart from '@/src/components/Cart';
 import { Product } from '@/src/context/CartContext';
 
-// Updated product data with local images
+// Product data with descriptive names and local images
 const products: Product[] = [
   {
     id: 1,
-    name: 'Product 1',
-    price: 19.99,
-    image: '/assets/allec.jpg', // Local image from public folder
+    name: 'Smartphone Pro',
+    price: 499.99,
+    image: '/assets/mockup.jpg', // Local image from public folder
   },
   {
     id: 2,
-    name: 'Product 2',
-    price: 29.99,
-    image: '/assets/allec.jpg', // Local image from public folder
+    name: 'Wireless Earbuds',
+    price: 129.99,
+    image: '/assets/dzeninalukac.jpg', // Local image from public folder
   },
   {
     id: 3,
-    name: 'Product 3',
-    price: 39.99,
-    image: '/assets/allec.jpg', // Local image from public folder
+    name: 'Smart Watch',
+    price: 249.99,
+    image: '/assets/shottrotter.jpg', // Local image from public folder
   },
   {
     id: 4,
-    name: 'Product 4',
-    price: 49.99,
-    image: '/assets/allec.jpg', // Local image from public folder
+    name: 'Bluetooth Speaker',
+    price: 89.99,
+    image: '/assets/soulful.jpg', // Local image from public folder
   },
 ];
 
 export default function ProductsPage() {
   return (
     <div className="bg-white min-h-screen">
-      <div className="container mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Our Products</h1>
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-2">Featured Products</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Discover our collection of high-quality products at competitive prices.
+            Free shipping on all orders over $50.
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
